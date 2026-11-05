@@ -1,0 +1,49 @@
+{
+  "videos": [
+    {
+      "task": "pickup",
+      "title": "Tabletop Pickup",
+      "duration": 16.0,
+      "conditions": 49,
+      "video_file": "pickup-web-720p.mp4",
+      "poster": "pickup-poster-web.webp",
+      "revision": "fe7f90f21dcf"
+    },
+    {
+      "task": "pnp",
+      "title": "Floor-to-Table",
+      "duration": 19.96,
+      "conditions": 49,
+      "video_file": "pnp-web-720p.mp4",
+      "poster": "pnp-poster-web.webp",
+      "revision": "2ea38ea26da7"
+    },
+    {
+      "task": "pnp_same_table",
+      "title": "Same-Table",
+      "duration": 16.0,
+      "conditions": 49,
+      "video_file": "pnp_same_table-web-720p.mp4",
+      "poster": "pnp_same_table-poster-web.webp",
+      "revision": "e0c29f209c09"
+    },
+    {
+      "task": "carrybox",
+      "title": "Box Carrying",
+      "duration": 25.72,
+      "conditions": 49,
+      "video_file": "carrybox-web-720p.mp4",
+      "poster": "carrybox-poster-web.webp",
+      "revision": "cea2f799d99d"
+    },
+    {
+      "task": "tidy_t2t",
+      "title": "Basket Transport",
+      "duration": 20.119999999999997,
+      "conditions": 49,
+      "video_file": "tidy_t2t-web-720p.mp4",
+      "poster": "tidy_t2t-poster-web.webp",
+      "revision": "9f4db2a2e918"
+    }
+  ]
+}

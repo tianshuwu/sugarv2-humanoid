@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#ffffff">
+  <link rel="icon" href="data:,">
+  <meta name="description" content="SUGARv2: Learning Visual Humanoid Loco-Manipulation from Synthesized Interactions. Real-world and simulation demonstrations across five tasks.">
+  <title>SUGARv2: Learning Visual Humanoid Loco-Manipulation from Synthesized Interactions</title>
+  <link rel="preload" href="assets/fonts/ibm-plex-sans.ttf" as="font" type="font/ttf" crossorigin>
+  <link rel="stylesheet" href="assets/site.css?v=215ea757d0b4">
+  <script defer src="assets/media.js?v=aca289124533"></script>
+  <script defer src="assets/site.js?v=e1b4a24def02"></script>
+  <script defer src="assets/simulation.js?v=0d574d81583e"></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <main id="main">
+    <section class="hero" aria-labelledby="title">
+      <video id="hero-video" class="hero-video" autoplay muted loop playsinline preload="none" data-desktop-src="assets/videos/hero-web-720p.mp4?v=9b7dc4a145ea" data-mobile-src="assets/videos/hero-mobile-720p.mp4?v=d31717414f4d" aria-hidden="true" tabindex="-1"></video>
+      <div class="hero-copy">
+        <h1 id="title" translate="no">SUGARv2</h1>
+      </div>
+    </section>
+
+    <section class="publication" aria-labelledby="publication-title">
+      <h2 id="publication-title"><span class="title-line">SUGARv2: Learning Visual Humanoid</span> <span class="title-line">Loco-Manipulation from Synthesized Interactions</span></h2>
+      <p class="publication-authors">
+        <span class="author-row">
+          <span>Tianshu Wu<sup>1</sup>,</span>
+          <span>Tianxiang Gui<sup>2</sup>,</span>
+          <span>Yue Chen<sup>1</sup>,</span>
+          <span>Tingxu Liu<sup>1</sup>,</span>
+          <span>Ziye Peng<sup>3</sup>,</span>
+        </span>
+        <span class="author-row">
+          <span>Guangjie Yang<sup>2</sup>,</span>
+          <span>Xiangqi Kong<sup>3</sup>,</span>
+          <span>Ye Shi<sup>2</sup>,</span>
+          <span>Jingya Wang<sup>2</sup>,</span>
+          <span>Hao Dong<sup>1</sup></span>
+        </span>
+      </p>
+      <p class="publication-affiliations">
+        <span><sup>1</sup> Peking University</span>
+        <span><sup>2</sup> ShanghaiTech University</span>
+        <span><sup>3</sup> Beihang University</span>
+      </p>
+        <div class="project-links" aria-label="Project resources">
+          <a class="project-link" role="link" aria-disabled="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6M8 13h8M8 17h6"/></svg>
+            <span>arXiv</span>
+          </a>
+          <a class="project-link" role="link" aria-disabled="true">
+            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 .75a11.25 11.25 0 0 0-3.558 21.923c.563.104.77-.244.77-.542 0-.267-.01-.975-.015-1.913-3.13.68-3.79-1.508-3.79-1.508-.512-1.3-1.25-1.646-1.25-1.646-1.022-.7.078-.686.078-.686 1.13.08 1.724 1.16 1.724 1.16 1.004 1.72 2.634 1.223 3.275.935.102-.727.393-1.223.715-1.504-2.498-.284-5.124-1.25-5.124-5.564 0-1.23.44-2.234 1.16-3.022-.116-.285-.503-1.43.11-2.98 0 0 .945-.303 3.094 1.154a10.79 10.79 0 0 1 5.624 0c2.148-1.457 3.09-1.154 3.09-1.154.616 1.55.23 2.695.114 2.98.722.788 1.157 1.792 1.157 3.022 0 4.325-2.63 5.277-5.136 5.555.404.35.765 1.04.765 2.096 0 1.513-.014 2.733-.014 3.104 0 .3.203.651.774.54A11.252 11.252 0 0 0 12 .75Z"/></svg>
+            <span>Code</span>
+          </a>
+        </div>
+    </section>
+
+    <div class="page-content">
+    <section id="visual-diversity" class="section simulation-section" aria-labelledby="visual-title">
+      <div class="section-heading"><div><h2 id="visual-title">Object and visual diversity</h2><p>Versatile manipulation through diversity in objects and visual conditions.</p></div></div>
+      <div id="visual-gallery" class="sim-gallery" data-simulation-gallery data-source="assets/visual-diversity/" role="region" aria-label="Visual diversity demonstrations">
+        <nav id="visual-tabs" class="sim-tabs" aria-label="Choose a simulation task"></nav>
+        <div id="visual-rail" class="sim-rail" tabindex="0" aria-label="Task videos. Swipe or use the left and right arrow keys."></div>
+        <div class="sim-navigation">
+            <button id="visual-previous" class="sim-arrow" type="button" aria-label="Previous simulation task" disabled><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="m14 5-7 7 7 7"/></svg></button>
+            <span id="visual-position" class="sim-position"></span>
+            <button id="visual-next" class="sim-arrow" type="button" aria-label="Next simulation task" disabled><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="m10 5 7 7-7 7"/></svg></button>
+        </div>
+        <p id="visual-error" class="video-error" role="status" hidden>Simulation videos could not be loaded. Please reload the page.</p>
+      </div>
+      <noscript><p><a href="assets/visual-diversity/pickup-web-720p.mp4">Watch the Tabletop Pickup simulation.</a></p></noscript>
+    </section>
+
+    <section id="simulation" class="section simulation-section" aria-labelledby="simulation-title">
+      <div class="section-heading"><div><h2 id="simulation-title">Spatial coverage of reference trajectories</h2><p>Spatial generalization through motion references spanning diverse configurations.</p></div></div>
+      <div id="simulation-gallery" class="sim-gallery" data-simulation-gallery data-source="assets/simulation/" role="region" aria-label="Simulation demonstrations">
+        <nav id="sim-tabs" class="sim-tabs" aria-label="Choose a simulation task"></nav>
+        <div id="sim-rail" class="sim-rail" tabindex="0" aria-label="Task videos. Swipe or use the left and right arrow keys."></div>
+        <div class="sim-navigation">
+            <button id="sim-previous" class="sim-arrow" type="button" aria-label="Previous simulation task" disabled><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="m14 5-7 7 7 7"/></svg></button>
+            <span id="sim-position" class="sim-position"></span>
+            <button id="sim-next" class="sim-arrow" type="button" aria-label="Next simulation task" disabled><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="m10 5 7 7-7 7"/></svg></button>
+        </div>
+        <p id="sim-error" class="video-error" role="status" hidden>Simulation videos could not be loaded. Please reload the page.</p>
+      </div>
+      <noscript><p><a href="assets/simulation/pickup-web-720p.mp4">Watch the Tabletop Pickup simulation.</a></p></noscript>
+    </section>
+    <section id="real-world" class="section" aria-labelledby="real-world-title">
+      <div class="section-heading">
+        <div><h2 id="real-world-title">Real-world demonstrations</h2><p>Five tasks on Unitree G1, viewed from three perspectives.</p></div>
+      </div>
+      <section id="pickup" class="task" data-task="Tabletop Pickup" aria-labelledby="pickup-title"><h3 id="pickup-title">Tabletop Pickup</h3><div class="demo-grid"></div></section>
+      <section id="floor-to-table" class="task" data-task="Floor-to-Table" aria-labelledby="floor-title"><h3 id="floor-title">Floor-to-Table</h3><div class="demo-grid"></div></section>
+      <section id="box" class="task" data-task="Box Carrying" aria-labelledby="box-title"><h3 id="box-title">Box Carrying</h3><div class="demo-grid"></div></section>
+      <section id="basket" class="task" data-task="Basket Transport" aria-labelledby="basket-title"><h3 id="basket-title">Basket Transport</h3><div class="demo-grid"></div></section>
+      <section id="same-table" class="task" data-task="Same-Table" aria-labelledby="same-title"><h3 id="same-title">Same-Table</h3><div class="demo-grid"></div></section>
+      <noscript><p>Enable JavaScript to browse the demonstrations, or <a href="assets/videos/pickup-1-web-720p.mp4">watch Tabletop Pickup directly</a>.</p></noscript>
+    </section>
+
+    <section id="method" class="section placeholder-section" aria-labelledby="method-title">
+      <div class="section-heading"><div><h2 id="method-title">Method</h2><p>From synthesized interaction references to deployable visual humanoid policies.</p></div></div>
+      <video class="method-film" controls autoplay muted loop playsinline preload="none" data-method-src="assets/method/overview-720p.mp4?v=557262454db1" data-poster="assets/method/overview.jpg?v=fd7eb9e55bc0" aria-label="Method overview: interaction reference synthesis, privileged teacher policy learning, visual student policy learning, and visual policy execution"></video>
+      <noscript><p><a href="assets/method/overview-720p.mp4">Watch the method overview.</a></p></noscript>
+    </section>
+    </div>
+  </main>
+</body>
+</html>
