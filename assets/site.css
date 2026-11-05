@@ -20,6 +20,7 @@
   --accent: #176f76;
   --paper: #fff;
   --soft: #f5f7f8;
+  --section-bg: #f5f6f7;
   --line: #dfe6e9;
   color-scheme: light;
   font-family: "IBM Plex Sans", "Helvetica Neue", Arial, sans-serif;
@@ -58,6 +59,8 @@ section[id] { scroll-margin-top: 28px; }
 main { max-width: 1360px; margin: auto; padding: 0 40px; }
 #main { max-width: none; padding: 0; }
 .page-content { max-width: 1120px; margin: auto; padding: 0 40px; }
+.content-band { padding: 72px 0; }
+.content-band-soft { background: var(--section-bg); }
 .hero { position: relative; isolation: isolate; display: grid; align-items: end; height: min(56.25vw, 100svh); min-height: 440px; overflow: hidden; background: var(--ink); }
 .hero .hero-video { position: absolute; inset: 0; z-index: -2; width: 100%; height: 100%; object-fit: cover; background: var(--ink); }
 .hero::after { content: ""; position: absolute; inset: 0; z-index: -1; pointer-events: none; background: linear-gradient(to bottom, transparent 40%, rgb(0 0 0 / .65) 100%); }
@@ -66,7 +69,7 @@ main { max-width: 1360px; margin: auto; padding: 0 40px; }
 .title-line { display: block; text-wrap: balance; }
 .subtitle { max-width: 760px; font-size: clamp(22px, 2.3vw, 29px); line-height: 1.4; letter-spacing: -.55px; color: var(--ink); margin: 18px auto 0; font-weight: 400; }
 .hero .subtitle { color: white; margin: 16px 0 0; text-shadow: 0 1px 12px rgb(0 0 0 / .4); }
-.publication { max-width: 1040px; margin: 0 auto; padding: 64px 40px 0; text-align: center; }
+.publication { max-width: 1040px; margin: 0 auto; padding: 64px 40px; text-align: center; }
 .publication h2 { font-size: clamp(26px, 2.7vw, 36px); line-height: 1.35; letter-spacing: -.8px; }
 .publication-authors { margin-top: 24px; font-size: 18px; line-height: 1.9; color: var(--ink); }
 .publication-authors span { display: inline-block; }
@@ -82,8 +85,9 @@ main { max-width: 1360px; margin: auto; padding: 0 40px; }
 
 video { display: block; width: 100%; aspect-ratio: 16/9; background: var(--soft); object-fit: contain; }
 video:fullscreen { background: #000; object-fit: contain; }
-.section { margin-top: 80px; padding-top: 0; }
-.section-heading { display: flex; justify-content: space-between; align-items: center; gap: 24px; }
+.section { margin: 0; }
+.section + .section { margin-top: 80px; }
+.section-heading { display: flex; justify-content: center; text-align: center; }
 .section-heading p { margin-top: 10px; font-size: 15px; }
 .task { padding-top: 30px; }
 .task + .task { margin-top: 24px; }
@@ -109,31 +113,20 @@ video:fullscreen { background: #000; object-fit: contain; }
 .sim-slide video { border-radius: 6px; pointer-events: none; background: var(--ink); }
 .sim-slide.active video { pointer-events: auto; }
 .sim-navigation { width: var(--sim-slide); max-width: 100%; display: flex; flex-wrap: wrap; justify-content: flex-end; align-items: center; gap: 4px; margin: 4px auto 0; }
-.sim-arrow { height: 40px; border: 0; background: white; color: var(--ink); cursor: pointer; }
+.sim-arrow { height: 40px; border: 0; background: transparent; color: var(--ink); cursor: pointer; }
 .sim-arrow { width: 40px; border-radius: 4px; display: grid; place-items: center; }
 .sim-arrow svg { width: 18px; height: 18px; }
-.sim-arrow:hover:not(:disabled) { background: var(--soft); }
+.sim-arrow:hover:not(:disabled) { background: rgb(23 47 67 / .06); }
 .sim-arrow:disabled { opacity: .3; cursor: default; }
 .sim-position { min-width: 38px; text-align: center; font-size: 13px; color: var(--muted); font-variant-numeric: tabular-nums; }
 
-.placeholder-section { border-top: 1px solid var(--line); margin-top: 68px; padding-top: 36px; }
-.placeholder-grid { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 16px; margin-top: 24px; }
-.placeholder-grid > div { min-height: 96px; display: grid; place-items: center; background: var(--soft); color: var(--muted); border: 1px dashed #cbd5db; border-radius: 6px; font-size: 15px; }
-.pending { font-size: 13px; margin-top: 12px; }
 .method-film { margin-top: 24px; border-radius: 6px; }
-.method-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 28px; margin-top: 24px; }
-.method-slot { background: var(--soft); min-height: 150px; padding: 28px; border: 1px dashed #cbd5db; border-radius: 6px; display: flex; flex-direction: column; justify-content: center; gap: 12px; }
-.method-slot h3 { font-size: 20px; }
-.method-slot p { font-size: 14px; }
-
-
 
 @media (max-width: 900px) {
   main { padding: 0 28px; }
   .page-content { padding: 0 28px; }
   .hero-copy { padding: 20px; }
-  .section-heading { align-items: start; }
-  .demo-grid, .method-grid { gap: 20px; }
+  .demo-grid { gap: 20px; }
   .task h3 { font-size: 20px; }
 
 }
@@ -143,29 +136,24 @@ video:fullscreen { background: #000; object-fit: contain; }
   .brand { font-size: 19px; }
   .hero { height: 100vw; min-height: 360px; max-height: 520px; }
   .hero-copy { padding: 16px; }
-  .publication { padding: 40px 20px 0; }
+  .publication { padding: 40px 20px 48px; }
   .publication-authors { font-size: 17px; margin-top: 20px; }
   .publication-affiliations { font-size: 14px; }
   .hero h1 { font-size: clamp(48px, 16vw, 96px); }
   .subtitle { font-size: 21px; letter-spacing: -.35px; margin-top: 14px; }
   .hero .subtitle { font-size: 17px; line-height: 1.4; margin-top: 12px; max-width: 32ch; }
-  .section { margin-top: 52px; padding-top: 0; }
-  .section-heading { align-items: start; flex-wrap: wrap; gap: 18px; }
+  .content-band { padding: 48px 0; }
+  .section + .section { margin-top: 56px; }
   .section-heading p { font-size: 14px; }
   .task { padding-top: 25px; }
   .task h3 { font-size: 20px; margin-bottom: 14px; }
   .task + .task { margin-top: 28px; }
-  .demo-grid, .method-grid { grid-template-columns: 1fr; gap: 24px; }
-  .placeholder-section { padding-top: 28px; margin-top: 48px; }
+  .demo-grid { grid-template-columns: 1fr; gap: 24px; }
+
   .simulation-section { --sim-slide: 82vw; }
   .sim-gallery { --sim-gap: 12px; margin-top: 16px; }
   .sim-tabs { gap: 22px; }
   .sim-tabs button { font-size: 13px; }
-  .placeholder-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 12px; margin-top: 20px; }
-  .placeholder-grid > div { min-height: 82px; font-size: 14px; }
-  .method-slot { padding: 22px; min-height: 130px; }
-  .method-slot h3 { font-size: 19px; }
-
 
 }
 @media (prefers-reduced-motion: reduce) {
@@ -176,4 +164,3 @@ video:fullscreen { background: #000; object-fit: contain; }
   .brand { font-size: 18px; }
 }
 
-.page-content { padding-bottom: 64px; }
