@@ -76,6 +76,7 @@ main { max-width: 1360px; margin: auto; padding: 0 40px; }
 .publication-authors .author-row { display: block; }
 .publication-affiliations { display: flex; justify-content: center; flex-wrap: wrap; column-gap: 24px; row-gap: 4px; margin-top: 10px; font-size: 15px; line-height: 1.7; }
 .publication-affiliations span { white-space: nowrap; }
+.publication-affiliations span:first-child { flex-basis: 100%; white-space: normal; }
 .project-links { display: flex; justify-content: center; flex-wrap: wrap; gap: 12px; margin-top: 24px; }
 .project-link { display: inline-flex; align-items: center; gap: 9px; min-height: 42px; padding: 9px 1.4rem; border: 1px solid transparent; border-radius: 9999px; background: #363636; color: white; font-size: 16px; font-weight: 600; letter-spacing: .02em; line-height: 1.4; text-decoration: none; }
 .project-link[aria-disabled="true"] { cursor: default; }
