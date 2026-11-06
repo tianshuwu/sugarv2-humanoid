@@ -7,7 +7,7 @@
       "conditions": 49,
       "video_file": "pickup-web-720p.mp4",
       "poster": "pickup-poster-web.webp",
-      "revision": "b96c50f93739"
+      "revision": "e7ca166b19b7"
     },
     {
       "task": "pnp",
@@ -16,7 +16,7 @@
       "conditions": 49,
       "video_file": "pnp-web-720p.mp4",
       "poster": "pnp-poster-web.webp",
-      "revision": "694d660c1db2"
+      "revision": "1f3de8782a50"
     },
     {
       "task": "pnp_same_table",
@@ -25,7 +25,7 @@
       "conditions": 49,
       "video_file": "pnp_same_table-web-720p.mp4",
       "poster": "pnp_same_table-poster-web.webp",
-      "revision": "e1c9b40b4768"
+      "revision": "2cf86bfc8f11"
     },
     {
       "task": "carrybox",
@@ -34,7 +34,7 @@
       "conditions": 49,
       "video_file": "carrybox-web-720p.mp4",
       "poster": "carrybox-poster-web.webp",
-      "revision": "d008be97d49e"
+      "revision": "28a6fe433312"
     },
     {
       "task": "tidy_t2t",
@@ -43,7 +43,7 @@
       "conditions": 49,
       "video_file": "tidy_t2t-web-720p.mp4",
       "poster": "tidy_t2t-poster-web.webp",
-      "revision": "cfeaa64acf46"
+      "revision": "4ffd6a7a424c"
     }
   ]
 }
